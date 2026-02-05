@@ -1,11 +1,11 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { SERVICES, SITE_CONFIG } from "@/config/siteConfig";
-import { 
-  Sparkles, 
-  Sun, 
-  Shield, 
-  Heart, 
+import {
+  Sparkles,
+  Sun,
+  Shield,
+  Heart,
   Smile,
   CircleDot,
   Phone
@@ -15,6 +15,9 @@ import { useEffect } from "react";
 import serviceImplants from "@/assets/service-implants.jpg";
 import serviceHygiene from "@/assets/service-hygiene.jpg";
 import serviceDiagnostic from "@/assets/service-diagnostic.jpg";
+import serviceSbiancamentoDentale from "@/assets/SbiancamentoDentale.png";
+import serviceEndodonzia from "@/assets/Endodonzia.png";
+import serviceProtesiDentarie from "@/assets/ProtesiDentarie.png";
 
 const iconMap: Record<string, React.ReactNode> = {
   implant: <CircleDot className="w-8 h-8" />,
@@ -29,6 +32,9 @@ const imageMap: Record<string, string> = {
   implantologia: serviceImplants,
   igiene: serviceHygiene,
   conservativa: serviceDiagnostic,
+  protesi: serviceProtesiDentarie,
+  sbiancamento: serviceSbiancamentoDentale,
+  endodonzia: serviceEndodonzia,
 };
 
 const Servizi = () => {
@@ -49,7 +55,7 @@ const Servizi = () => {
                 I nostri servizi
               </h1>
               <p className="text-lg text-muted-foreground">
-                Una gamma completa di trattamenti odontoiatrici eseguiti con professionalità, 
+                Una gamma completa di trattamenti odontoiatrici eseguiti con professionalità,
                 tecnologie moderne e attenzione al comfort del paziente.
               </p>
             </div>
@@ -64,9 +70,8 @@ const Servizi = () => {
                 <div
                   key={service.id}
                   id={service.id}
-                  className={`grid lg:grid-cols-2 gap-8 items-center animate-slide-up ${
-                    index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                  }`}
+                  className={`grid lg:grid-cols-2 gap-8 items-center animate-slide-up ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                    }`}
                 >
                   {/* Content */}
                   <div className={index % 2 === 1 ? "lg:order-2" : ""}>
@@ -126,7 +131,7 @@ const Servizi = () => {
               Hai bisogno di maggiori informazioni?
             </h2>
             <p className="text-primary-foreground/90 max-w-2xl mx-auto mb-8">
-              Contattaci per una consulenza personalizzata. 
+              Contattaci per una consulenza personalizzata.
               Saremo lieti di rispondere a tutte le tue domande.
             </p>
             <a

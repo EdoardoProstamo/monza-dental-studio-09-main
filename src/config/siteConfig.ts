@@ -10,7 +10,7 @@ export const SITE_CONFIG = {
   name: "Studio Dentistico Dr. Morao",
   shortName: "Dr. Morao",
   category: "Studio Dentistico",
-  
+
   // Contatti
   address: {
     street: "Via Dario Niccodemi, 14",
@@ -22,10 +22,10 @@ export const SITE_CONFIG = {
   },
   phone: "+39 039 200 1379",
   phoneDisplay: "039 200 1379",
-  
+
   // Dati Fiscali
   piva: "DA INSERIRE",
-  
+
   // Orari (DA INSERIRE)
   hours: {
     lunedi: "DA INSERIRE",
@@ -36,11 +36,11 @@ export const SITE_CONFIG = {
     sabato: "Chiuso",
     domenica: "Chiuso"
   },
-  
+
   // Link esterni
   googleMapsUrl: "https://maps.google.com/?q=Via+Dario+Niccodemi+14+Monza+MB+Italia",
   googleReviewsUrl: "DA INSERIRE",
-  
+
   // SEO
   seo: {
     title: "Studio Dentistico Dr. Morao | Dentista a Monza",
@@ -107,7 +107,7 @@ export const SERVICES = [
     name: "Sbiancamento Dentale",
     description: "Trattamenti professionali per ridonare luminosità al tuo sorriso in modo sicuro e controllato.",
     tags: ["Estetica"],
-    icon: "sun"
+    icon: "SbiancamentoDentale.png"
   },
   {
     id: "conservativa",
@@ -121,14 +121,14 @@ export const SERVICES = [
     name: "Endodonzia",
     description: "Trattamento dei canali radicolari per salvare denti compromessi ed eliminare il dolore.",
     tags: ["Cura"],
-    icon: "heart"
+    icon: "Endodonzia.png"
   },
   {
     id: "protesi",
     name: "Protesi Dentarie",
     description: "Soluzioni protesiche fisse e mobili per ripristinare funzionalità ed estetica del sorriso.",
     tags: ["Protesi", "Estetica"],
-    icon: "smile"
+    icon: "ProtesiDentarie.png"
   }
 ];
 

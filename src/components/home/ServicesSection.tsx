@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { SERVICES } from "@/config/siteConfig";
-import { 
-  Sparkles, 
-  Sun, 
-  Shield, 
-  Heart, 
+import {
+  Sparkles,
+  Sun,
+  Shield,
+  Heart,
   Smile,
   CircleDot,
   ArrowRight
@@ -13,6 +13,9 @@ import {
 import serviceImplants from "@/assets/service-implants.jpg";
 import serviceHygiene from "@/assets/service-hygiene.jpg";
 import serviceDiagnostic from "@/assets/service-diagnostic.jpg";
+import serviceSbiancamentoDentale from "@/assets/SbiancamentoDentale.png";
+import serviceEndodonzia from "@/assets/Endodonzia.png";
+import serviceProtesiDentarie from "@/assets/ProtesiDentarie.png";
 
 const iconMap: Record<string, React.ReactNode> = {
   implant: <CircleDot className="w-6 h-6" />,
@@ -27,6 +30,9 @@ const imageMap: Record<string, string> = {
   implantologia: serviceImplants,
   igiene: serviceHygiene,
   conservativa: serviceDiagnostic,
+  protesi: serviceProtesiDentarie,
+  sbiancamento: serviceSbiancamentoDentale,
+  endodonzia: serviceEndodonzia,
 };
 
 const ServicesSection = () => {
@@ -41,7 +47,7 @@ const ServicesSection = () => {
             I nostri servizi
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Offriamo una gamma completa di trattamenti odontoiatrici 
+            Offriamo una gamma completa di trattamenti odontoiatrici
             per la cura e la bellezza del tuo sorriso.
           </p>
         </div>
@@ -62,7 +68,7 @@ const ServicesSection = () => {
                   />
                 </div>
               )}
-              
+
               {/* Icon */}
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
                 {iconMap[service.icon] || <CircleDot className="w-6 h-6" />}
